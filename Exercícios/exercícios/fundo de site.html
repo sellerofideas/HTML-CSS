@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundos</title>
+    <style>
+        /*body {
+            background-image: url('Imagens/wallpaper001.jpg');
+            /* Controlar o tamanho
+            background-size: 200px 200px;
+            /*Repetir a imagem
+            background-repeat: repeat;
+        } */      
+        /*div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: lightblue;
+            width: 300px;
+            height: 300px;          
+        }
+        div#q1 {
+            background-color: blue;
+        }
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, green);
+        }
+        div#q3 {
+            background-image: url('imagens/pattern001.png');
+        }*/
+
+        /*body {
+            /*Podemos usar uma imagem externa através de um link:
+            height: 89vh;
+            border: 1px dashed black;
+            background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+            background-size: 100px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+        }
+        */
+        /* div.bloco {
+            background-image: url('Imagens/wallpaper002.jpg');
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        div#q1 {
+            /* Para declarar uma pesição a ordem é: 
+            background-position: coluna linha; 
+            background-position: left top;
+        }
+        div#q2 {
+            background-position: left center;
+        }
+        div#q3 {
+            background-position: right bottom;
+        }
+        div#q4 {
+            background-position: center center;
+        }
+        body {
+            height: 98vh;
+            background-image: url('Imagens/wallpaper003.jpg');
+            background-position: center center;
+        }*/
+        body {
+            height: 100vh;
+            /*
+            background-color: black;
+            background-image: url('Imagens/wallpaper002.jpg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* O comando a seguir fixa ou faz com que a imagem de fundo se movimente com a rolagem do site.
+            background-attachment: fixed; */
+
+            /* Shorthand - background 
+                color > image > position > repeat > [size] > attachment
+                no caso size é preciso por separado.*/
+            
+            background: black url('Imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
+        }
+        main {
+            background-color: white;
+            /* Ao usar o max-width ao invés do width, o bloco não exede o tamanho limite quando a pagina é aumentada.*/
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>
+            Texte de aplicação de fundos
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus aut culpa magnam, sed qui et laboriosam! Quo aspernatur quidem in perspiciatis officiis praesentium voluptatibus rerum tempora culpa, magnam obcaecati eos!
+        </p>
+        <div class="quadrado bloco" id="q1">
+        </div>
+        <div class="quadrado bloco" id="q2">
+        </div>
+        <div class="quadrado bloco" id="q3">
+        </div>
+        <div class="bloco" id="q4">
+        </div>
+    </main>
+</body>
+</html>
