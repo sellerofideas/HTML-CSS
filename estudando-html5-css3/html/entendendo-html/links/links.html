@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/Entendendo-css/style1.css/estilo.css">
+    <title>Links em HTML5</title>
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+   </nav>
+    <main>
+        <h1>Como funcionam os links</h1>
+        <p>Os links são aquilo que liga uma página de um site a outra. Para criar um link usamos a tag &lt;a&gt;.</p>
+            <h2>Atributos do hiperlink</h2>
+            <ul>                
+                <li><h3>&lt;a <mark style="color: blue; background-color: transparent;">href="</mark><mark style="color: red; background-color: transparent;">https://github.com</mark><mark style="color: blue; background-color: transparent;">"</mark>>Clique aqui!&lt;/a&gt;</h3></li>
+                <p>Seu principal atributo é o "<strong>href</strong>" que cria uma referência hipertexto dando acesso a url.</p>
+
+                <li><h3>&lt;a href=<mark style="color: red; background-color: transparent;">"https://github.com"</mark> <mark style="color: blue; background-color: transparent;">hreflang="pt-br"</mark>&gt;</mark>Clique aqui!&lt;/a&gt;</h3></li>
+                <p>Outro atributo importante <strong>hreflang</strong> que permite aos buscadores saber a linguagem da página para onde o link leva e assim oferecer opções de tradução ao usuário.</p>
+
+                <li><h3>&lt;a href="<mark style="color: red; background-color: transparent;">https://github.com</mark>" <mark style="color: blue; background-color: transparent;">target="</mark>_blank">Clique aqui!&lt;/a&gt;</h3></li>
+                <p>Esse atributo marca o link como "alvo" e serve para controlarmos aonde a página de destino do link será aberta. Caso queira abrir um conteúdo do próprio site podemos usar o modo padão sem adicionar "target" ou acrescentar o valor "_self" ao atributo. Caso o conteúdo seja externo, o ideal é usar o valor "_blank".</p>
+                <p>Esses são alguns dos valores que podem ser acrescentados ao atributo.</p>
+                <ul>
+                    <li><strong>_blank</strong> abre uma nova janela em branco.</li>
+                    <li><strong>_self</strong> Abre na mesma janela.</li>
+                    <li><strong>_top</strong> fecha todas as abas e abre a janela de destino.</li>
+                    <li><strong>_parent</strong> Abre dados no tamanho da janela pai.</li>
+                    <li><strong>nome-do-frame</strong> Quando usamos frames, nesse caso precisamos colocar o nome da janela que irá abrir.</li>
+                </ul>
+                <li><h3>&lt;a href="<mark style="color: red; background-color: transparent;">https://github.com</mark>" target="</mark>_blank" <mark style="color: blue; background-color: transparent;">rel="next"</mark>>Clique aqui!&lt;/a&gt;</h3></li>
+                <p>O atributo "<strong>rel</strong>" indica para o buscador qual é a natureza do link.</p>
+                <ul>
+                    <li><strong>next</strong> indica que o link é para a próxima parte do conteúdo, como a próxima pagina.</li>
+                    <li><strong>prev</strong> indica que o link é para a página anterior.</li>
+                    <li><strong>author</strong> indica que o link é para a página do autor do conteúdo.</li>
+                    <li><strong>external</strong> indica que o link é para um conteúdo externo.</li>
+                    <li><strong>nofollow</strong> indica que o link é para um site pago etc.</li>
+                </ul>
+            </ul>
+
+        <h1>Usando links externos</h1>
+        <p>Como você viu, links externos abrem outras abas no navegador e tem o objetivo de conduzir o visitante sem fechar seu site, ex:</p>
+        <p>Você pode usar o meu <a href="https://github.com/sellerofideas" target="_blank" rel="external">repositório no github</a></p>
+        <p>Você também pode <a href="https://www.linkedin.com/in/treinamentodsp/" target="_blank" rel="external">acessar meu linkedin</a></p>
+    
+        <h1>Links internos</h1>
+        <p>No caso de links internos, a janela é aberta dentro do site sem abrir outra aba,</p>
+        <p>Esta é a página atual do meu site, se você quiser pode acessar também <a href="../links/link-interno.html" rel="next">segunda página.</a></p>
+         
+        <h1>Baixar arquivos</h1>
+        <p>Para disponibilizar arquivos para download, basta adicionar o arquivo desejado em uma pasta e usar a tag &lt;a&gt; com o parâmetro "download".
+    
+            <h2>Links para dowload</h2>
+            <ul>
+                <li><a href="../../Materiais/01 - História da Internet.pdf" download="historia da internet.pdf" type="application/pdf">Baixar o livro em pdf</a></li>
+            </ul>
+            <p>Para baixar o arquivo direto basta adicionar a tag &lt;a href="livro/100 títulos.pdf" download="livro/100 títulos.pdf" type="aplication/pdf">Baixar direto&lt;/a&gt;</p> 
+            
+            <p><mark>Esse comando não é aceito em todos os navegadores.</mark></p>
+            <h1>Media types</h1>
+            <p>Aqui vão alguns media types bem usados no nosso dia-a-dia: <br>
+                <ul>
+                    <li>application/zip</li> 
+                    <li>text/html</li> 
+                    <li>text/css</li> 
+                    <li>text/javascript</li> 
+                    <li>video/mp4</li> 
+                    <li>video/H264</li> 
+                    <li>video/JPEG</li> 
+                    <li>audio/aac</li> 
+                    <li>audio/mpeg</li> 
+                    <li>font/ttf</li> 
+                    <li>image/jpeg</li> 
+                    <li>image/png</li> 
+                </ul>
+            
+            <p>Entenda como os <a href="https://www.youtube.com/watch?v=BNHR6IQJGZs">mecanismos de busca do Google</a> funcionam.</p>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>

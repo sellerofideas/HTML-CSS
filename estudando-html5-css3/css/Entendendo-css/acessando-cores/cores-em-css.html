@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../style1.css/estilo.css">
+    <title>Cores em CSS</title>
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+   </nav>
+    <main>
+
+        <h1>Psicologia das cores</h1>
+        <p>Fontes sobre o assunto.
+            <ul>
+                <li><a href="https://rockcontent.com/br/blog/psicologia-das-cores/" target="_blank" rel="external">Rockcontent - Psicologia das cores</a></li>
+
+            <li><a href="http://www.matildefilmes.com.br/psicologia-das-cores-guia-avancado-para-profissionais/" target="_blank" rel="external">Matolde filmes - Psicologia das cores- Guia para profissionais</a></li>
+
+                <li><a href="https://neilpatel.com/br/blog/psicologia-das-cores-como-usar-cores-para-aumentar-sua-taxa-de-conversao/" target="_blank" rel="external">Niel Patel - Psicologia das cores e markting digital</a></li>
+            </ul>
+    <h1>Acessando as cores em CSS</h1>
+        <h2 style="background-color: blue; color: white;">Cores inline em CSS</h2>
+            <p>As cores inline em CSS são chamadas usando a tag <strong>style</strong> dentro da tag que desejamos mudar e podem ser representadas por 4 tipos:</p>
+        <h2 style="background-color: blue; color: white;">Representação por nomes</h2>
+            <p>Quando chamamos a cor por seu nome em inglês: <strong> &lt;h2 style="background-color: blue; <mark style="background-color: transparent; color: red;">color: white;"</mark>>&lt;/h2&gt;</strong>.</p>
+        
+        <h2 style="background-color: #0000ff; color: #ffffff;">Representação por códigos hexadecimal</h2>
+            <p>Quando chamamos a cor por seu número hexadecimal:<strong> &lt;h2 style="background-color: #0000ff; <mark style="background-color: transparent; color: red;">color: #ffffff;</mark>">&lt;/h2&gt;</strong>.</p>
+            <p>Um número hexadecimal contem 16 digitos e vai de 0 á 9:"0,1,2,3,4,5,6,7,8,9" e de A á F: "a,b,c,d,e,f".
+            </p>
+            
+            <p>A cor hexadecimal  é representada como "<strong>#<mark style="color: red; background-color: transparent;">00</mark><mark style="color: green; background-color: transparent;">77</mark><mark style="color: blue; background-color: transparent;">ff</mark></strong>" sendo que os 2 primeiros algarismos depois da cerquilha representa a quantidade de cor vermelha, os outros 2 representam a quantidade de cor verde e os últimos 2 algarismos, a quantidade da cor azul.</p>
+        <h2 style="background-color: rgb(0, 0,255); color: rgb(255, 255, 255);">Representação por RGB</h2>
+            <p>Quando chamamos a cor por seu código RGB: <strong>&lt;h2 style="background-color:rgb(0, 0,255); <mark style="background-color: transparent; color: red;">color: rgb(255, 255, 255)"</mark>>&lt;/h2&gt;</strong>.</p>
+            <p>Nesse caso as cores são definidas pela quantidade de vermelho (Red), verde (Green) e azul (Blue) em cada codigo representado por seus respectivos números: "rgb(<strong>
+                <mark style="background-color: transparent; color: red;">0</mark>, <mark style="background-color: transparent; color: green;">0</mark>,<mark style="background-color: transparent; color: red;">255</mark></strong>").</p>
+        <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Representação por hsl</h2>
+            <p>Quando chamamos a cor por seu código hsl: &lt;h2 style="background-color:hsl(240, 100%, 50%); <mark style="background-color: transparent; color: red;"><strong>color: hsl(0, 0%, 100%);</strong></mark>">&lt;/h2&gt;.</p>
+            <p>Nesse caso o código representa a quantidade de matiz (hue), saturação (saturation) e luminosidade (Luminosity): "hsl(240, 100%, 50%)" (hue, saturation, Luminosity). </p>        
+    <ul>
+        <li>Dica: Podemos modificar as cores e a transparência usando a caixa de cores do VSCode, basta posicionar o cursor sobre a cor e alterar como desejar.</li>
+    </ul>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>

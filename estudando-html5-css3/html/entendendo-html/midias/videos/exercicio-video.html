@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../css/Entendendo-css/style1.css/estilo.css">
+    <title>Videos</title>
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+   </nav>
+    <main>
+        <h1>Trabalhando com vídeos.</h1>
+        <p>Para adicionar um vídeo ao site precisamos usar a tag <strong>&lt;video></strong> com seus atributos.</p>
+
+            <h2>Os atributos da tag &lt;video></h2>
+    
+            
+                <p><strong>&lt;video <mark style="color: blue; background-color: transparent;">whidth="600px"</mark> <mark style="color: red; background-color: transparent;">poster="tumb.jpg"</mark> <mark style="color: green; background-color: transparent">controls</mark> <mark style="color: orangered; background-color: transparent">autoplay</mark>></strong></p>
+            <ul>       
+                <li><p><strong style="color: blue;">width</strong>, indica a largura que o vídeo ocupa na tela.</p></li>
+           
+                <li><p><strong style="color: red;">poster</strong> configura uma imagem de capa do vídeo enquanto ele não é reproduzido.</p></li>
+        
+                <li>
+                    <p><strong style="color: green;">controls</strong> mostra ou não os controles do vídeo.</p>
+                </li>
+
+                <li>
+                    <p><strong style="color: orangered;">autoplay</strong> indica que o áudio será executado assim que a página for carregada.</p>
+                </li>
+            </ul>
+        <h1>Hospedando vídeos</h1>
+            <h2>Hospedagem no próprio site</h2>
+            <p>Para hospedar um vídeo no próprio site use a tag <strong>&lt;video src="nome-do-video.mp4" width="400" poster="nome-da-imagem.jpg" controls >&lt;/video>, em seguida adicione a tag "source" com o vídeo no formato desejado, adicione também outos formatos do vídeo para caso o navegador não seja compatível. Ex:</strong></p>
+            
+
+<pre class="pre">
+        <code>
+            &lt;video width="400vw" poster="../imagens/Imagens/g.png" controls >
+                &lt;source src="../videos/pexels-polina-tankilevitch-8609000.mp4"
+                 type="video/mp4">
+                &lt;source src="../videos/pexels-polina-tankilevitch-8609000.m4v" 
+                type="video/mp4">
+                &lt;source src="../videos/pexels-polina-tankilevitch-8609000.
+                webm" type="video/ogg">
+                &lt;p>Seu navegador não é compativel com o formato do video.</p>
+                &lt;/video>
+        </code>
+</pre>           
+               <div class="video-local">
+                   <video width="315" height="315" poster="../imagens/Imagens/g.png" controls class="center">
+                    <source src="../videos/pexels-polina-tankilevitch-8609000.mp4" type="video/mp4">
+                    <source src="../videos/pexels-polina-tankilevitch-8609000.m4v" type="video/mp4">
+                    <source src="../videos/pexels-polina-tankilevitch-8609000.webm" type="video/ogg">
+                    <p>Seu navegador não é compativel com o formato do video.</p>
+                    </video>
+               </div>
+
+           <p>Não é recomendado usar esse método, pois normalmente faz com que a página fique muito pesada, o mais recomendado é usar servidores externos.</p>
+    
+           <h2>Hospedando em servidores externos</h2>
+            <p>Outra forma de hospedar videos no site é através de servidores externos, nesse caso os mais recomendados são:</p>
+            <ul>
+                <li><h3> YouTube</h3></li>
+                A vantagem do youtube é que ele não tem limite de vídeos e de acessos. A desvantagem é que qualquer pessoa pode ter acesso ao vídeo e copiá-lo.
+                <p></p>
+
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xx01-s_Q-mU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <li><h3>Vimeo</h3></li>
+                No Vimeo você tem mais segurança, pois existe a opção de impedir o acesso, além da qualidade gráfica, mas é limitado na quantidade de acessos e dados que você pode fazer de upload. <p></p>
+                <div class="video"><iframe src="https://player.vimeo.com/video/71361854?h=b2108012ad" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+            </ul>    
+                <p>Para hospedar um vídeo externo basta copiar o códio HTML do vídeo e colá-lo no site.</p>
+            
+            <h1>Baixar e converter vídeos</h1>
+            <p>Se precisar baixar e/ou converter vídeos em vários formatos para usar em seu site, use estas dicas:</p>
+            <ol>
+                <li><h2>Dica</h2></li>
+                <p>Para baixar videos gratuitos para usar em campanhas use o site <a href="https://www.pexels.com/pt-br/videos/" target="_blank" rel="external">pexels videos</a>. Tenha também o vídeo vários formatos.</p>
+                <p>Os formatos mais compativeis para sites são:</p>
+                 <ul>
+                      <li>.MP4</li>
+                      <li>.M4V</li>
+                      <li>.WEBM</li>
+                      <li>.OGV</li>
+                 </ul>
+                 <li><h2>Dica</h2></li>
+                 <p>Baixe o programa HandBrake no site <a href="https://handbrake.fr/" target="_blank" rel="external">handebrake.fr</a> para converter videos. </p>
+             </ol>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>

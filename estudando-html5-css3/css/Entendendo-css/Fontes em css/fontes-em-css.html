@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../css/Entendendo-css/style1.css/estilo.css">
+    <title>Fontes</title>
+</head>
+<body>
+    <header id="principal">
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2 class="subtitulo">Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <div>
+        <label for="chec">
+            <img src="../../../Imagens/menu.png">
+        </label>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia </a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li> 
+            <li><a href="../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <li><a href="../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li>
+            <li><a href="../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/cores-em-css.html" target="_self" rel="next">Cores</a></li>
+            <li><a href="../acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e     classes</a></li>
+            <li><a href="fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+    </nav> 
+    <main>
+        <h1>Fontes em CSS</h1>
+
+        <h2>Trabalhando com fontes em Css</h2>
+        <p>Para trabalhar com as fontes existem 2 formas mais usadas:
+            <ul>
+                <li><strong>Usando o estilo de CSS interno</strong></li>
+                <p>Nesse caso usamos a tag style dentro da head na própria página. o código fica assim:
+<pre class="pre">
+<code>
+&lt;style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+    h1{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 50px;
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+&lt;/style>
+</code>
+</pre>
+                </p>
+
+                <li><strong>Usando o estilo CSS externo</strong></li>
+                <p>Nesse caso as configurações serão feitas em uma folha de CSS externa. Confira nosso conteúdo sobre <a href="../estilos/estilo.html" target="_blank" rel="next">estilos de CSS aqui</a>.</p>
+            </ul>
+        </p>
+            <h2>Tamanho das fontes</h2>
+            <p>Para configurar o tamanho das fontes em CSS usamos o parâmetro "font-size:". 
+                
+                <p>Existem dois tipos de tamanhos de fontes:</p>
+            <ol>
+                <li><h3>Medidas Absolutas</h3></li> Cm (centímetro), mm (milímetro), in (polegada), px (pixel), pt (ponto), pc (paica).
+            
+                <li><h3>Medidas Relativas.</h3></li> "Em" (Medida relativa ao tamanho da letra M maiúsculo da fonte), "ex" (Relativa ao tamanho da letra x da fonte), "rem" (Relativa a fonte configurada no body), "vw" (Relativa ao percentual da largura largura da Viewport ou tamanho da tela),  "vh" (relativo ao percentual da altura da viewport), % (Porcentagem relativa).
+                <p>Os mais utilizados para o tamanho da fonte são o "em" e o "px". <br> Normalmente 16px é o mesmo tamanho que 1em.
+                É sempre recomendado usar em para se adequar melhor ao tamanho das telas, desde um relógio até uma TV.</p>
+            </ol>
+            </p>
+            <p>Confira sobre a medida suportada das fontes no <a href="https://www.w3.org/Style/Examples/007/units.pt_BR.html" target="_blank" rel="next">site da M3C</a> aqui.</p>
+        <h2>Peso das fontes.</h2>
+        <p>Para configurar o peso usamos o comando "font-weight:". Os tipos de pesos são:</p>
+        <ul>
+            <li style="font-weight: lighter;" >Lighter</li>
+            <li style="font-weight: normal;">Normal</li>
+            <li style="font-weight: bold;">Negrito (bold)</li>
+            <li style="font-weight: bolder;">Extra-bold</li>
+            <li>Numérica de 100 á 900.</li>
+        </ul>
+        <h2>Estilo das fontes</h2>
+        <p>Para usar estilo nas fontes configuramos usando "font-style:", assim podemos acessar as configurações:
+            <ul>
+                <li style="font-style: italic;">Italico</li>
+                <li style="font-style: oblique;">Oblíquo</li>
+            </ul>
+            <p>Para simplificar os comandos existe uma configuração chamada "shorthand" que une várias configurações em uma única linha deixando o código mais enxuto, a sequência que deve ser aplicada é font-style, font-weight, font-size, font-family.</p>
+            <ul>
+                O código fica:
+                <li>font: italic bolder 3em 'work sans', sans-serif</li>
+            </ul>
+        </p>
+        <h2>Shorthands</h2>
+        <p>Podemos simplificar o uso das fontes em CSS usando as "shorthands" que são formas abreviadas de escrever um código.</p>
+
+        <p>O jeito normal de configurar uma fonte é:</p>
+<pre class="pre">
+<code>
+    p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+        font-style: italic;
+        font-weight: bold;
+    }
+</code>
+</pre>
+
+        <p>Com o uso de shorthand:</p>
+<pre class="pre">
+<code>
+    p{
+        font: italic bold 1em Arial, Helvetica, sans-serif;
+    }
+</code>
+</pre>
+
+        <p>A ordem é muito importante no caso das shorthands, no caso da propriedade fonte a ordem é:</p>
+        <ul>
+            <li>font-style</li>
+            <li>font-variant</li>
+            <li>font-weight</li>
+            <li>font-size/line/height</li>
+            <li>fontfamily</li>
+        </ul>
+
+        <h2>Formas de Alinhamento</h2>
+        <p>Para alinhar conteúdos em CSS usamos na tag head ou em uma folha de estilo separada as configurações de "text-", "text-align:", "text-indent" etc.</p>
+        <p>Existem quatro formas de alinhamento de textos:</p>
+        <ul>
+            <li>text-align: left;</li>
+            <li>text-align: right;</li>
+            <li>text-align: center;</li>
+            <li>text-align: justify;</li>            
+        </ul>
+
+        <h2>Capturando fontes usadas em um site</h2>
+        <p>Para capturar detalhes de fontes usadas nos sites você precisa instalar uma extensão do fontes ninja do <a href="https://chrome.google.com/webstore/detail/fonts-ninja/eljapbgkmlngdpckoiiibecpemleclhh?hl=pt-BR" target="_blank" rel="noopener noreferrer">Chrome app store.</a> </p>
+        <h2>Formas de implementar fontes:</h2>
+        
+        Para buscar outros tipos de fontes direto do google fontes.
+        <p><a href="https://fonts.google.com/" target="_blank" rel="external">Google Fonts.</a></p>
+        <p>Para implementar uma fonte do Google fontes é preciso escolher a fonte desejada, copiar o código CSS e implementar na "head", na tag "style" ou no arquivo CSS com as configurações desejadas.</p>
+        <hr>
+        Fontes do site Dafont.
+        <p><a href="https://www.dafont.com/pt/" target="_blank" rel="external">Dafont.com.</a></p>
+        Nesse caso você precisa baixar o arquivo zip, descompactar e copiar o arquivo otf e ttf.
+        <h4>Tipos de format()</h4>
+        <ul>
+            <li>Opentype(otf)</li>
+            <li>Truetype(ttf)</li>
+            <li>Embedded- opentype</li>
+            <li>Truetype-att (Apple Advanced Typography)</li>
+            <li>Svg</li>
+        </ul>
+        <p>Para configurar a fonte nesse caso utilize no campo da head a tag "style" e a regra "@font-face" depois é só configurar a "font-famyli:" com o nome da fonte. </p>
+        
+        <p>Para saber as "sequências seguras de fontes" abra o site <a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="externals">CSS Web Safe Combinations.</a></p>
+        <p>Para identificar fontes dentro de imagens:
+            <ul>
+                <li><a href="https://www.whatfontis.com/" target="_blank" rel="noopener noreferrer">What fonts.</a></li>
+                <li><a href="https://www.fontsquirrel.com/" target="_blank" rel="noopener noreferrer">Font Squirrel.</a></li>
+                <li><a href="https://www.myfonts.com/" target="_blank" rel="noopener noreferrer">MyFonts</a></li>
+            </ul>
+        </p> 
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>

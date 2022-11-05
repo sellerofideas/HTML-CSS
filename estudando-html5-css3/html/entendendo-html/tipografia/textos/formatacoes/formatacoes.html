@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../../css/Entendendo-css/style1.css/estilo.css">
+    <title>Formatações e comandos</title>
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+   </nav>
+    <main>
+        <h1>Outras formatações</h1>
+        
+        <h2>Codigo fonte</h2>
+            <p> A tag &lt;code&gt; <code>é usada quando queremos escrever um código dentro do conteúdo, no caso de uma página que ensina alguma linguagem de programação, por exemplo. Esse comando serve para espaçar os caracteres dando uma melhor visibilidade, mas acaba desmanchando o código e não mostrando como deveria ser.</code></p>
+            
+            <p>A tag &lt;pre&gt; é usada para mostrar o texto do jeito que estiver escrito, muito útil para corrigir o problema da tag "code", pois deixa o código mostrando sua identação.
+            <p> Ex:
+            <pre>
+                <code>
+                &lt;pre&gt;
+                   &ltcode&gt;
+                    num = int(input('digite um número'))
+                    if num % 2 == 0;
+                        print(f'O numero {num} é par')
+                     else;
+                        print(f'O numero é impar')
+                    print('fim do programa')
+                    &lt;/code&gt;
+                &lt;/pre&gt;
+                </code>
+            </pre>
+        
+            <h2>Citações sem quebra de linha</h2>
+            <p>Quanto se está fazendo uma citação, é importante usar a tag &lt;q&gt;, que vem do inglês <em>quote</em> e signifíca "Citar". <br>
+             Ex: Como diria o pai de um amigo: &lt;q&gt;<q>o computador é um burro muito rápido.</q>&lt;q&gt; </p>
+        
+            <h2>Citações completas</h2>
+            <p>Usamos  para citar um texto grande como, por exemplo:</p>
+            <p>Como diria Jeff Besos, em seu livro como criei a Amazon:</p>
+            <blockquote>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi cupiditate doloribus mollitia magni odit officiis eos molestias maiores maxime repellendus facere quasi quidem minima, temporibus a, facilis corrupti perspiciatis vitae.</blockquote>
+            
+            <h2>Abreviações</h2>
+            <p>Para trabalhar com abreviações, quando queremos mostrar seu significado completo para o visitante da página, adcionamos a tag &lt;abbr&gt;, ex:  <abbr title="HyperText markup language">HTML</abbr> <abbr title="Cascading Style Sheet">CSS</abbr> </p>
+        
+                <h2>Texto invertido</h2>
+            <p>Usando a tag &lt;bdo dir="rtl"&gt; a frase se inverte ficando <bdo dir="rtl">de frente para trás</bdo>.</p>
+            <p>Usando a tag &lt;bdo dir="ltr"&gt; a frase invertida fica <bdo dir="ltr">De frente para trás</bdo>.</p>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>

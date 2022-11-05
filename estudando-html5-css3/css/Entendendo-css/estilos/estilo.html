@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/html.ico" type="image/x-icon">
+    <title>Estilos</title>
+    <link rel="stylesheet" href="../../../css/Entendendo-css/style1.css/estilo.css">    
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+   </nav>
+    <main>
+        <h1>Usando CSS para dar estilo no conteúdo do site</h1>
+            <h2>CSS externo</h2>
+             <p>Usando essa técnica você consegue deixar todo o site em um só padão. <br>
+             Dentro da área da "<strong>head</strong>" onde são feitas as configurações da pagina digite "<strong>link</strong>" e escolha "<strong>link:css</strong>". Depois pressione "Ctrl" e clique no nome do arquivo css que foi criado para adicionar as configurações desejadas, assim todas as páginas que estiverem lincadas a esse arquivo css serão mudadas e padronizadas simultâniamente.</p>
+
+<pre class="pre">
+    <code>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;link rel="shortcut icon" href="../../Imagens/favicon.ico" type="image/x-icon">
+        &lt;title>Estilos</title>
+        <mark style="color: red; background-color: transparent;"><strong>&lt;link rel="stylesheet" href="../../css/style1.css/estilo.css"></strong></mark>    
+    &lt;/head>
+    &lt;body>
+    </code>
+</pre>
+             
+             <h2>CSS interno2</h2>
+             <p>A técnica CSS interno permite mudar vários elementos que estão dentro de uma página ao mesmo tempo. Ela serve para alterar elementos como títulos, parágrafos entre outros elementos que se repetem na página sem a nescessidade de alterar 1 por 1 e caso você queira uma mudança que não afete outras páginas. <br>
+            Para usar essa técnica basta adicionar as configurações CSS desejadas dentro da "head", assim a página será alterada.</p>
+
+<pre class="pre">
+    <code>
+    &lt;!DOCTYPE html>
+    &lt;html lang="en">
+    &lt;head>
+        &lt;meta charset="UTF-8">
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+        &lt;link rel="shortcut icon" href="../../Imagens/favicon.ico" type="image/x-icon">
+        <mark style="color: red; background-color: transparent;">
+            &lt;style>
+                h1{
+                    counter-reset: red;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+                h2{
+                    margin: 0px;
+                    padding: 5px;
+                }
+            &lt;/style>
+        </mark>
+        &lt;title>Estilos</title>    
+    &lt;/head>
+    &lt;body>
+    </code>
+</pre>
+        
+             <h2>CSS inline</h2>
+        
+                 <p>A técnica INLINE é usada caso queira <mark style="color: darkcyan; background-color: transparent;"><strong>alterar somente um determinado elemento</strong></mark> da página deixando ele com a cor darkcyan, por exemplo. Para isso, basta adicionar o código CSS na tag da linha desejada. <br>
+                     
+                <p><mark style="color: darkcyan; background-color: transparent;">&lt;p style="color: brown;">Técnica CSS inline&lt;/p&gt;</mark></p>
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>   
+</body>
+</html>

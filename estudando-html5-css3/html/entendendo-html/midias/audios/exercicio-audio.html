@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../../Imagens/html.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../../../css/Entendendo-css/style1.css/estilo.css">
+    <title>Trabalhando com audios</title>
+</head>
+<body>
+    <header>
+        <h1>APRENDENDO HTML 5 & CSS 3</h1>
+        <h2>Guia para estudantes</h2>
+    </header>
+    <input type="checkbox" id="chec">    
+    <label id="icone" for="chec">
+        <img src="../../../../Imagens/menu.png">
+    </label>
+    <nav>
+        <ul>
+            <li><a href="../../../../index.html" target="_self" rel="next">Home</a></li>
+            <li><a href="../../../../html/entendendo-html/estrutura.html" target="_self" rel="next">Entendendo HTML 5</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/tipografia.html" target="_self" rel="next">Tipografia</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/textos/textos.html" target="_self" rel="next">Textos</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/listas/listas.html" target="_self" rel="next">Listas</a></li>
+            <li><a href="../../../../html/entendendo-html/tipografia/textos/formatacoes/formatacoes.html" target="_self" rel="next">Formatações</a></li>                        
+            <li><a href="../../../../html/entendendo-html/box/box.html" target="_self" rel="next">Box </a></li>
+            <li><a href="../../../../html/entendendo-html/tabela/tabelas.html">Tabelas</a></li target="_self" rel="next">
+            <li><a href="../../../../html/entendendo-html/links/links.html" target="_self" rel="next">Links</a></li>
+            <!--li><a href="html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Midias</a></li-->
+            <li><a href="../../../../html/entendendo-html/midias/imagens/exercicio-imagem.html" target="_self" rel="next">Imagens</a></li>
+            <li><a href="../../../../html/entendendo-html/midias/audios/exercicio-audio.html" target="_self" rel="next">Audios</a></li>
+            <li><a href="../../../../html/entendendo-html/midias/videos/exercicio-video.html" target="_self" rel="next">Videos</a></li>
+            <li><a href="../../../../css/Entendendo-css/estrutura-css.html" target="_self" rel="next">Entendendo CSS 3</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/cores-em-css.html" class="a" target="_self" rel="next">Cores</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/harmonia-de-cores/harmonia-de-cores.html" target="_self" rel="next">Harmonia das cores</a></li>
+            <li><a href="../../../../css/Entendendo-css/acessando-cores/gradientes/gradiente.html" target="_self" rel="next">Gradiente</a></li>
+            <li><a href="../../../../css/Entendendo-css/estilos/estilo.html" target="_self" rel="next">Estilo</a></li>                 
+            <li><a href="../../../../css/Entendendo-css/Identificadores-e-classes/identificadores-e-classes.html" target="_self" rel="next" >IDs e classes</a></li>
+            <li><a href="../../../../css/Entendendo-css/Fontes em css/fontes-em-css.html" target="_self" rel="next">Fontes em CSS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Trabalhando com áudios.</h1>
+        <p>Patra trabalharmos com áudios usamos a tag <strong> &lt;áudio></strong>.</p>
+
+            <h2>Inserindo áudio</h2>
+            <p>A tag áudio tem importantes atributos como <strong>preload</strong> que indica que o áudio será pre-carregado ou não, este atributo possui 3 valores:</p>
+            <ul>
+                <li><strong>metadate</strong>, carrega apenas as informações sobre tamanho, tempo =, direitos autorais, etc., do arquivo.</li>
+                <li><strong>none</strong>, não carrega nada até que o play seja ativado.</li>
+                <li><strong>auto</strong>, carrega o áudio assim que a página é carregada, caso nehuma dessas alternatvas esteja ativa, ele está ativo por padão.</li>
+            </ul>
+            <p><strong>Consols</strong> é o atributo que mostra os controles do player, caso não esteja ativo o audio não será controlado pois os controles não estarão visíveis.</p>
+            
+            <p>O atributo <strong>autoplay</strong> reproduz o áudio aassim que a página é carregada.</p>
+
+            <p><strong>Loop</strong> reproduz o áudio infinitamente quando o tempo termina.</p>
+
+            <p>No código, coloque o áudio que deseja executar primeiro, depois coloque outras versões para o caso de o navegador não ser compatível, por fim, você também pode adicionar um parágrafo disponibilizando o áudio para download caso nenhuma das alternativas funcione.</p>
+<pre class="pre">
+    <code>
+        &lt;audio>
+            &lt;source src="minia/audio.mp3" type="audio/mpeg">
+            &lt;source src="minia/audio.ogg" type="audio/ogg">
+            &lt;source src="midia/audio.wav" type="image/wav">
+            &lt;p>Seu navegador não suporta audio &lt;a href="midia/audio.mp3"
+             douwnload="audio.mp3" type="audio/mpeg">&lr;/a>&lt;/p>
+        &lt;/audio>
+    </code>
+</pre>
+            <p>Assim como as imagens, os áudios precisam de versões em outros formatos par oferecermos uma melhor experiência aos usuários. Nem todos os navegadores aceitam todos os formatos.</p>
+            
+            <h2>Formatos de áudios</h2>
+
+            <p>Os formatos de áudios mais usados são:</p>
+       
+            <ol>
+                <ul>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/MP3" target="_blank" rel="external">MP3</a></strong></li>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/Ogg" target="_blank" rel="external">OGG</a></strong></li>
+                    <li>.<strong><a href="https://pt.wikipedia.org/wiki/WAV" target="_blank" rel="external">WAV</a></strong></li>
+                </ul>
+            </ol>
+        </ol>
+        
+    </main>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">@sellerofideas</a></p>
+
+        <div>
+            <h2>Social midias:</h2>
+            <p>Instagram: <a href="https://www.instagram.com/thesellerofideas/" target="_blank" rel="external">@thesellerofideas</a></p>
+            <p>linkedin: <a href="https://www.linkedin.com/in/sellerofideas/" target="_blank" rel="external">sellerofideas</a></p>
+            <p>Site: <a href="http://www.thesellerofideas.com/" target="_blank" rel="external">thesellerofideas.com</a></p>
+            <p>Github: <a href="https://github.com/sellerofideas?tab=repositories" target="_blank" rel="external">Sellerofideas</a></p>
+        </div>
+        <div class="div2">
+            <h2>Contatos</h2>
+            <p>E-mail: <a href="https://mail.google.com/mail/u/0/?tab=rm#inbox" target="_blank" rel="external">thesellerofideas8@gmail.com</a></p>
+            <p>Whatsapp: <a href="https://wa.me/message/B57JFR3HWPPFB1" target="_blank" rel="external">(44)9.8859-4579</a></p>
+        </div>
+    </footer>
+</body>
+</html>
